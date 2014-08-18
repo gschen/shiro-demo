@@ -1,0 +1,4 @@
+this is success.vm
+
+<a href="/users"> users </a> <br/>
+<a href="/role/list"> role list </a>

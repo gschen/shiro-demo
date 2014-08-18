@@ -1,0 +1,27 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply from: 'gretty.plugin'
+
+gretty {
+    port = 8080
+    contextPath = "/"
+    servletContainer = 'tomcat8'
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+compile('org.apache.shiro:shiro-core:1.2.3',
+        'org.apache.shiro:shiro-spring:1.2.3',
+
+
+        'org.springframework:spring-webmvc:4.0.3.RELEASE',
+        'org.apache.velocity:velocity:1.7',
+        'javax.servlet:javax.servlet-api:3.1.0',
+        'org.springframework:spring-context-support:4.0.0.RELEASE',
+)
+}
